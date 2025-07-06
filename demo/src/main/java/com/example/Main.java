@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class Main {
@@ -10,15 +12,36 @@ public class Main {
         stackCarros.push(new Carro("Chevrolet"));
         stackCarros.push(new Carro("Fiat"));
 
-        System.out.println(stackCarros);
+        Queue<Carro> queueCarros = new LinkedList<>();
+        queueCarros.add(new Carro("Ford"));
+        queueCarros.add(new Carro("Chevrolet"));
+        queueCarros.add(new Carro("Fiat"));
 
-        System.out.println(stackCarros.pop());
-        System.out.println(stackCarros);
+        System.out.println(queueCarros.add(new Carro("Peugeot")));
+        System.out.println(queueCarros);
 
-        System.out.println(stackCarros.peek());
-        System.out.println(stackCarros);
+        System.out.println(queueCarros.offer(new Carro("Renault")));
+        System.out.println(queueCarros);
 
-        System.out.println(stackCarros.empty());
+        System.out.println(queueCarros.peek());
+        System.out.println(queueCarros);
+
+        System.out.println(queueCarros.poll());
+        System.out.println(queueCarros);
+
+        System.out.println(queueCarros.isEmpty());
+
+        System.out.println(queueCarros.size());
+
+       // System.out.println(stackCarros);
+
+       // System.out.println(stackCarros.pop());
+       // System.out.println(stackCarros);
+
+        //System.out.println(stackCarros.peek());
+        //System.out.println(stackCarros);
+
+        //System.out.println(stackCarros.empty());
 
     }
 }
