@@ -26,7 +26,7 @@ public class Main {
 
         System.out.println(treeSetCarros);
 
-        /*
+        
         List<Carro> listaCarro = new ArrayList<>();
 
         listaCarro.add(new Carro("Ford"));
@@ -77,6 +77,5 @@ public class Main {
         System.out.println(stackCarros);
 
         System.out.println(stackCarros.empty());
-*/
     }
 }
